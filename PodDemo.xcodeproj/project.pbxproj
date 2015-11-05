@@ -10,6 +10,8 @@
 		93E8B41D1BEB8D2A0072A63C /* PodDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E8B41C1BEB8D2A0072A63C /* PodDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93E8B4241BEB8D2A0072A63C /* PodDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E8B4191BEB8D2A0072A63C /* PodDemo.framework */; };
 		93E8B4291BEB8D2A0072A63C /* PodDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8B4281BEB8D2A0072A63C /* PodDemoTests.swift */; };
+		93E8B4341BEB8D4E0072A63C /* JustAnObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8B4331BEB8D4E0072A63C /* JustAnObject.swift */; };
+		93E8B4361BEB8DA30072A63C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E8B4351BEB8DA30072A63C /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		93E8B4231BEB8D2A0072A63C /* PodDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E8B4281BEB8D2A0072A63C /* PodDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodDemoTests.swift; sourceTree = "<group>"; };
 		93E8B42A1BEB8D2A0072A63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E8B4331BEB8D4E0072A63C /* JustAnObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustAnObject.swift; sourceTree = "<group>"; };
+		93E8B4351BEB8DA30072A63C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				93E8B41C1BEB8D2A0072A63C /* PodDemo.h */,
 				93E8B41E1BEB8D2A0072A63C /* Info.plist */,
+				93E8B4331BEB8D4E0072A63C /* JustAnObject.swift */,
+				93E8B4351BEB8DA30072A63C /* Images.xcassets */,
 			);
 			path = PodDemo;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E8B4361BEB8DA30072A63C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E8B4341BEB8D4E0072A63C /* JustAnObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 		93E8B42E1BEB8D2A0072A63C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.PodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		93E8B42F1BEB8D2A0072A63C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

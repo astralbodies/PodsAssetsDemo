@@ -1,0 +1,25 @@
+{
+  "name": "PodDemo",
+  "version": "0.0.1",
+  "summary": "A demo application to showcase an issue with xcassets",
+  "authors": {
+    "Aaron Douglas": "astralbodies@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "PodDemo",
+    "PodDemo/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "PodDemo/Exclude",
+  "resource_bundles": {
+    "PodDemo": [
+      "PodDemo/*.storyboard",
+      "PodDemo/*.xib",
+      "PodDemo/*.otf",
+      "PodDemo/Images.xcassets"
+    ]
+  },
+  "requires_arc": true
+}
